@@ -1,83 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kkkkkkkk</title>
-    <style>
-        body {
-            font-family: 'Helvetica', sans-serif;
-            text-align: center;
-            background-color: #f8e7e7;
-            margin: 0;
-            padding: 0;
-        }
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tri Tran</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-        #container {
-            max-width: 100%;
-            margin: auto;
-            padding: 5vw;
-        }
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-        h1 {
-            color: #e44d5d;
-            font-size: 4vw;
-        }
+				<!-- Intro -->
+					<div id="intro">
+						<h1>This is<br />
+						Tri Tran</h1>
+						<p>Step into the captivating realm of Tri, a multifaceted individual whose journey through life is a tapestry of curiosity, resilience, and authenticity.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
-        p {
-            color: #333;
-            font-size: 2.5vw;
-            line-height: 1.6;
-            margin-bottom: 2vw;
-        }
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Tri Tran</a>
+					</header>
 
-        button {
-            padding: 2vw 4vw;
-            font-size: 2.5vw;
-            background-color: #e44d5d;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            position: relative;
-        }
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Tri Tran</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/JohnnieeTran" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/itsjhnntrn" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/johnnietritran" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
 
-        button:hover {
-            background-color: #b42f3d;
-        }
-    </style>
-    <script>
-        function showAlert(message) {
-            alert(message);
-        }
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="contact">
+							<section class="alt">
 
-        function moveButton(buttonId) {
-            var button = document.getElementById(buttonId);
+								<h3>Email</h3>
+								<p><a href="#">contact@tritrn.com</a></p>
 
-            var maxX = window.innerWidth - button.offsetWidth;
-            var maxY = window.innerHeight - button.offsetHeight;
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/JohnnieeTran" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/itsjhnntrn" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/johnnietritran" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
 
-            var randomX = (Math.random() * 0.8 - 0.5) * maxX;
-            var randomY = (Math.random() * 0.2 ) * maxY;
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
 
-            if (randomX + button.offsetWidth > maxX) {
-                randomX = maxX - button.offsetWidth;
-            }
+			</div>
 
-            if (randomY + button.offsetHeight > maxY) {
-                randomY = maxY - button.offsetHeight;
-            }
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-            button.style.left = randomX + "px";
-            button.style.top = randomY + "px";
-        }
-    </script>
-</head>
-<body>
-    <div id="container">
-        <h1>Làm bạn gái tôi chứ, cô bé NKHH?</h1>
-        <button onclick="window.location.href='yes.html'">Yes</button>
-        <button id="noButton" onclick="moveButton('noButton')">No</button>
-    </div>
-</body>
+	</body>
 </html>
