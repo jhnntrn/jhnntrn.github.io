@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    color:black;
+}
+
+.container{
+    min-width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Thumbnail';
+}
+
+.header h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: 'Thumbnail';
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 40vh;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+#navbar {
+    width: 100vw;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; /* Separates the logo and ul list */
+    align-items: center; /* Aligns elements vertically */
+    position: sticky;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-flex;
+    margin-right: 5vw;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#navbar a:hover {
+    background-color: #727272;
+    color: orange;
+}
+
+#navbar a.active {
+    background-color: #ff8a2354;
+    color: white;
+}
+
+#navbar a.active:hover {
+    background-color: #727272;
+    color: orange;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
