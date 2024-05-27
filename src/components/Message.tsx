@@ -6,7 +6,7 @@ function Message() {
     <div className="message">
       <Typewriter
         options={{
-          strings: ["Chị ơiiii", "Có j ăng hok", "Em đói =))))))))"],
+          strings: ["Chị ơiiii", "Chị đâu rùii", "Tụi em nhớ chị <3"],
           autoStart: true,
           loop: false,
         }}
