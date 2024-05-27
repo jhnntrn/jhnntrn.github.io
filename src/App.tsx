@@ -1,7 +1,11 @@
 import "./App.css";
 import Message from "./components/Message";
 function App() {
-  return <Message />;
+  return (
+    <div className="container">
+      <Message />
+    </div>
+  );
 }
 
 export default App;
