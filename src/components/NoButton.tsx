@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 interface NoButtonProps {
   text: string;
   onClick: () => void;
+  disabled?: boolean; // Add a prop for disabled state
   style?: React.CSSProperties;
   className?: string;
 }
@@ -14,6 +15,7 @@ interface NoButtonProps {
 const NoButton: React.FC<NoButtonProps> = ({
   text,
   onClick,
+  disabled = false,
   style,
   className,
 }) => {
@@ -32,16 +34,25 @@ const NoButton: React.FC<NoButtonProps> = ({
   return (
     <motion.button
       onClick={() => {
-        handleMove();
-        onClick();
+        if (!disabled) {
+          // Only allow click if not disabled
+          handleMove();
+          onClick();
+        }
       }}
-      onMouseEnter={handleMove}
+      onMouseEnter={() => {
+        if (!disabled) {
+          // Only allow hover if not disabled
+          handleMove();
+        }
+      }}
       animate={position}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       style={{ position: "absolute", ...style }}
       className={className}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
+      whileHover={!disabled ? { scale: 1.1 } : undefined} // Scale only if not disabled
+      whileTap={!disabled ? { scale: 0.9 } : undefined} // Scale only if not disabled
+      disabled={disabled} // Apply disabled attribute based on prop
     >
       {text}
     </motion.button>

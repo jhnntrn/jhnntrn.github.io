@@ -7,9 +7,10 @@ import "./Input.css";
 
 const Input: React.FC = () => {
   const [shouldRender, setShouldRender] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
-    const delay = 97000; // 97 seconds in milliseconds
+    const delay = 1000; // 97 seconds in milliseconds
     const timer = setTimeout(() => {
       setShouldRender(true);
     }, delay);
@@ -18,11 +19,12 @@ const Input: React.FC = () => {
   }, []);
 
   const handleNormalButtonClick = () => {
-    alert("Normal Button clicked!");
+    alert("Oki z chủ nhật mình ik chơi nka ");
   };
 
   const handleNoButtonClick = () => {
-    alert("No Button clicked!");
+    setDisabled(true);
+    alert("Ai cho bấm cái này màk bấm 😏");
   };
 
   return shouldRender ? (
@@ -36,6 +38,7 @@ const Input: React.FC = () => {
         text="mtri tủi j đòi qen mchau 😏"
         onClick={handleNoButtonClick}
         className="button button-no"
+        disabled={disabled}
       />
     </div>
   ) : null;
