@@ -1,4 +1,4 @@
-import { easeIn, easeInOut, easeOut, motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import "./Loading.css";
 function Loading() {
   return (
