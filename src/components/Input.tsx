@@ -10,7 +10,7 @@ const Input: React.FC = () => {
   const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
-    const delay = 1000; // 97 seconds in milliseconds
+    const delay = 97000; // 97 seconds in milliseconds
     const timer = setTimeout(() => {
       setShouldRender(true);
     }, delay);
